@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Github, Code, Book, Briefcase, User } from 'lucide-react';
-import './Profile.css';
+
 
 const Profile = () => {
   return (
