@@ -43,6 +43,7 @@ const Profile = () => {
       <section>
         <h2>Education</h2>
         <p>Information Technology</p>
+        
         <p>Senior High School / College</p>
       </section>
 
