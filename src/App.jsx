@@ -11,6 +11,7 @@ function App() {
       <Home />
       <About />
       <Profile /> 
+      <Certificates/>
     </>
   );
 }

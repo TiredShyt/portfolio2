@@ -66,8 +66,8 @@ const Profile = () => {
           <section>
             <h2><Briefcase size={22} /> Experience</h2>
             <article className="experience-item">
-              <h3>Frontend Developer (Projects)</h3>
-              <p className="date">2023 - Present</p>
+              <h3>Frontend Developer</h3>
+              <p className="date"> -2024 Present</p>
               <p>
                 Developed portfolio websites and interactive web apps. 
                 Focused on component-based architecture and state management in React.
