@@ -14,3 +14,18 @@ export default {
   },
   plugins: [],
 }
+
+
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          pink: 'var(--brand-pink)',
+          dark: 'var(--brand-dark)',
+        },
+      },
+    },
+  },
+}
