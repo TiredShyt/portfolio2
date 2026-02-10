@@ -1,8 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-/* --- 1. Design Tokens --- */
 :root {
   /* Brand colors captured from your CSS snippet and screenshots */
   --brand-pink: #D83B7D;
