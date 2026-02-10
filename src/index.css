@@ -3,51 +3,27 @@
 @tailwind utilities;
 
 :root {
-  /* Brand Colors from your reference */
   --brand-pink: #D83B7D;
   --brand-dark: #8B1A4F;
-
-  /* Typography & Rendering */
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Standard color scheme */
-  color-scheme: light;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 body {
-  margin: 0;
-  min-height: 100vh;
-  background-color: #ffffff;
-  color: #1a1a1a;
-  /* Removed display: flex to allow normal scrolling */
+  @apply m-0 min-h-screen bg-white text-slate-900 antialiased;
 }
 
-/* Custom Component Layer for Tailwind */
 @layer components {
-  /* Mimicking the button from the RanDev screenshot */
-  .btn-download {
-    @apply bg-[#D83B7D] text-white px-8 py-3 rounded-full font-bold 
-           hover:bg-[#8B1A4F] transition-all shadow-lg shadow-pink-100
-           active:scale-95 border-none cursor-pointer;
+  .btn-brand {
+    @apply bg-[--brand-pink] text-white px-8 py-3 rounded-full font-bold 
+           hover:bg-[--brand-dark] transition-all shadow-lg shadow-pink-100
+           active:scale-95 border-none cursor-pointer inline-flex items-center gap-2;
   }
 
-  /* Section heading accent line */
-  .title-underline {
-    @apply absolute -bottom-1 left-0 h-1 bg-[#D83B7D] transition-all duration-300;
+  .section-title {
+    @apply text-3xl font-black italic uppercase flex items-center gap-3 relative mb-8;
   }
-}
 
-/* Base element styling */
-h1 {
-  @apply text-slate-900 leading-[1.1];
-}
-
-a {
-  @apply font-medium text-[#D83B7D] no-underline hover:text-[#8B1A4F] transition-colors;
+  .title-accent {
+    @apply absolute -bottom-2 left-0 w-20 h-1 bg-[--brand-pink];
+  }
 }
