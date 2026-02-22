@@ -93,13 +93,13 @@ const Profile = () => {
                 date="2023 - 2026"
                 title="Associate in Computer Technology"
                 sub="University of San Jose - Recoletos"
-                desc="Major in Software Development. Focused on modern web development."
+                desc="Major in Software Development. Focused on Software and Web development."
               />
               <TimelineItem 
                 date="2021 - 2023"
                 title="Senior High School"
                 sub="Mantalongon National High School"
-                desc="Completed secondary education in Patao, Bantayan, Cebu."
+                desc="Completed secondary education in Mantalongon, Dalaguete, Cebu."
               />
             </div>
           </div>
