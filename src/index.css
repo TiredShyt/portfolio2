@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root {
+  --brand-pink: #D83B7D; 
+  --brand-dark: #8B1A4F;
+  --skill-highlight: #f8fafc;
+  --skill-accent: #e2e8f0;
+}
+
+@layer components {
+  .section-title {
+    @apply text-xs font-black uppercase tracking-[0.3em] mb-12 flex items-center gap-4 text-slate-400;
+  }
+  .btn-brand {
+    @apply bg-slate-900 text-white px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[--brand-pink] transition-all duration-300;
+  }
+  .title-accent {
+    @apply h-[1px] w-12 bg-slate-200 inline-block;
+  }
+}
