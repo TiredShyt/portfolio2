@@ -98,7 +98,7 @@ const Profile = () => {
               <TimelineItem 
                 date="2021 - 2023"
                 title="Senior High School"
-                sub="Patao National High School"
+                sub="Mantalongon National High School"
                 desc="Completed secondary education in Patao, Bantayan, Cebu."
               />
             </div>

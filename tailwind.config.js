@@ -7,13 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        // This links the Tailwind class to the CSS variable
+        // Link Tailwind utilities to your CSS variables
         'brand-pink': 'var(--brand-pink)',
         'brand-dark': 'var(--brand-dark)',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-      }
+      },
     },
   },
   plugins: [],

@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --brand-pink: #D83B7D; 
@@ -11,9 +13,12 @@
   .section-title {
     @apply text-xs font-black uppercase tracking-[0.3em] mb-12 flex items-center gap-4 text-slate-400;
   }
+
   .btn-brand {
-    @apply bg-slate-900 text-white px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[--brand-pink] transition-all duration-300;
+    @apply bg-slate-900 text-white px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest 
+           hover:bg-brand-pink transition-all duration-300;
   }
+
   .title-accent {
     @apply h-[1px] w-12 bg-slate-200 inline-block;
   }
