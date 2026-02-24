@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Github, Globe, Award } from 'lucide-react';
+import { Mail, Github, Globe } from 'lucide-react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub as FaGithubIcon } from "react-icons/fa";
 
 const skills = [
@@ -11,8 +11,7 @@ const skills = [
 ];
 
 const softSkills = [
-  'Problem Solving', 'Creativity', 'Critical Thinking', 
-  'Teamwork', 'Communication'
+  'Problem Solving', 'Creativity', 'Critical Thinking'
 ];
 
 const Profile = () => {
@@ -37,14 +36,16 @@ const Profile = () => {
               Seth Andrey<br/> <span className="text-slate-300">Jabagat</span>
             </h1>
             <p className="text-slate-500 text-lg leading-relaxed">
-              I am a fresh graduate in Computer Technology major in Software Development. 
-              With internship experience as a Junior Front-End Developer, I focus on building high-quality 
-              user experiences using React.
+              Computer Technology student specializing in Software Development with
+              experience building responsive websites using HTML, CSS, JavaScript,
+              and React basics. Passionate about UI/UX design and user-focused
+              interfaces. Quick learner and collaborative team player eager to contribute
+              to impactful web and design projects.
             </p>
             
             <div className="space-y-4 pt-4">
-              <ContactLink icon={<Mail size={18}/>} text="sethandreyjabagat@gmail.com" />
-              <ContactLink icon={<Github size={18}/>} text="github.com/gsi78eywh" />
+              <ContactLink icon={<Mail size={18}/>} text="sethandreyabrasad0@gmail.com" />
+              <ContactLink icon={<Github size={18}/>} text="github.com/yourusername" />
               <ContactLink icon={<Globe size={18}/>} text="Dalaguete, Cebu, Philippines" />
             </div>
 
@@ -73,12 +74,11 @@ const Profile = () => {
             <div>
               <h3 className="bg-[--skill-highlight] border-l-4 border-[--skill-accent] px-4 py-2 font-black text-[10px] uppercase tracking-widest mb-6">Certifications</h3>
               <div className="space-y-3">
-                <CertItem title="Cyber Security" org="Cisco" />
-                <CertItem title="Skills to Succeed" org="Accenture" />
-                <CertItem title="Coursera Data Analytics" org="Accenture" />
-                <CertItem title="Coursera Data Analytics Data Engineeringr" org="Accenture" />
-                <CertItem title="Coursera Power Automation using Python" org="Accenture" />
-                <CertItem title="HTML, CSS, JS" org="DICT" />
+                <CertItem title="Skills to Succeed Academy" org="Accenture" />
+                <CertItem title="Google Data Analytics" org="Google" />
+                <CertItem title="Google Coursera Python Automation" org="Google" />
+                <CertItem title="Google UI/UX Training Module" org="Google" />
+                <CertItem title="Rapid Application Development" org="Alliance Software Solutions" />
               </div>
             </div>
           </div>
@@ -105,19 +105,25 @@ const Profile = () => {
           </div>
 
           <div>
-            <h2 className="section-title text-slate-800">Experience & Events <span className="title-accent"></span></h2>
+            <h2 className="section-title text-slate-800">Experience <span className="title-accent"></span></h2>
             <div className="space-y-0">
               <TimelineItem 
-                date="May 2025 - Jan 2026"
-                title="Junior Front-End Developer (Intern)"
-                sub="MYT-Softdev Solutions"
-                desc="Worked in a team-driven environment to design and implement software solutions."
+                date="Aug 2025 - Nov 2025"
+                title="Library Management System (School Project)"
+                sub="University Project"
+                desc="Developed a responsive, user-friendly online library system that improved accessibility for students. 70% of users reported easier access to resources."
               />
               <TimelineItem 
-                date="June 2025"
-                title="Digital Career Expo"
-                sub="Cebu City Hall"
-                desc="Explored emerging technologies like AI, Cybersecurity, and Cloud Computing."
+                date="Sep 2025 - Nov 2025"
+                title="Mini E-commerce Frontend (School Project)"
+                sub="University Project"
+                desc="Designed a simple online shopping interface with responsive design, product browsing, cart addition, and checkout functionality."
+              />
+              <TimelineItem 
+                date="Jul 2025 - Sep 2025"
+                title="Kombat Console Games (School Project)"
+                sub="University Project"
+                desc="Developed a console-based combat game with character selection, turn-based battles, and health tracking, showcasing programming fundamentals."
               />
             </div>
           </div>
