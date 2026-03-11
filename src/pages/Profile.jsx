@@ -1,13 +1,34 @@
 import React from 'react';
 import { Mail, Github, Globe } from 'lucide-react';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub as FaGithubIcon } from "react-icons/fa";
+import { 
+  FaHtml5, 
+  FaCss3Alt, 
+  FaJs, 
+  FaReact, 
+  FaGithub, 
+  FaNodeJs, 
+  FaPhp, 
+  FaLaravel 
+} from 'react-icons/fa';
+
+import { 
+  SiDocker, 
+  SiNginx, 
+  SiElasticsearch 
+} from 'react-icons/si';
 
 const skills = [
   { name: 'HTML', icon: <FaHtml5 />, color: 'text-orange-500' },
   { name: 'CSS', icon: <FaCss3Alt />, color: 'text-blue-500' },
   { name: 'JavaScript', icon: <FaJs />, color: 'text-yellow-400' },
   { name: 'React', icon: <FaReact />, color: 'text-cyan-400' },
-  { name: 'Git & GitHub', icon: <FaGithubIcon />, color: 'text-slate-800' },
+  { name: 'Node.js', icon: <FaNodeJs />, color: 'text-green-600' },
+  { name: 'PHP', icon: <FaPhp />, color: 'text-indigo-600' },
+  { name: 'Laravel', icon: <FaLaravel />, color: 'text-red-500' },
+  { name: 'Docker', icon: <SiDocker />, color: 'text-blue-500' },
+  { name: 'Nginx', icon: <SiNginx />, color: 'text-emerald-500' },
+  { name: 'Elasticsearch', icon: <SiElasticsearch />, color: 'text-blue-400' },
+  { name: 'Git & GitHub', icon: <FaGithub />, color: 'text-slate-800' },
 ];
 
 const softSkills = [
@@ -23,8 +44,8 @@ const Profile = () => {
         <section id="about" className="grid md:grid-cols-2 gap-16 items-start">
           <div className="rounded-3xl overflow-hidden shadow-2xl border-b-[10px] border-[--brand-pink]">
              <img 
-              src="https://i.pinimg.com/736x/95/11/8b/95118b0e82f9c4b1e4029383db12ffa3.jpg" 
-              alt="Seth Andrey Jabagat" 
+              src="braylii.svg" 
+              alt="Bryle Suquib Solon " 
               className="w-full h-auto object-cover aspect-[4/5]"
             />
           </div>
@@ -33,20 +54,16 @@ const Profile = () => {
               About <span className="title-accent"></span>
             </h2>
             <h1 className="text-5xl font-black uppercase tracking-tighter leading-none">
-              Seth Andrey<br/> <span className="text-slate-300">Jabagat</span>
+              Bryle <br/> <span className="text-slate-300">Solon</span>
             </h1>
             <p className="text-slate-500 text-lg leading-relaxed">
-              Computer Technology student specializing in Software Development with
-              experience building responsive websites using HTML, CSS, JavaScript,
-              and React basics. Passionate about UI/UX design and user-focused
-              interfaces. Quick learner and collaborative team player eager to contribute
-              to impactful web and design projects.
+              Results-driven Associate in Computer Technology student and CLI enthusiast seeking a position that leverages my technical skills . Hands-on experience with Linux (Arch/Debian)  and Docker for deploying reproducible environments, including MySQL Master-Slave replication and Nginx configurations. Proven ability to automate workflows—reducing task completion times by 80% and dedicated to applying a disciplined, problem-solving approach  to real-world infrastructure challenges.
             </p>
             
             <div className="space-y-4 pt-4">
-              <ContactLink icon={<Mail size={18}/>} text="sethandreyabrasad0@gmail.com" />
-              <ContactLink icon={<Github size={18}/>} text="github.com/yourusername" />
-              <ContactLink icon={<Globe size={18}/>} text="Dalaguete, Cebu, Philippines" />
+              <ContactLink icon={<Mail size={18}/>} text="tiredofbeggingshyt@gmail.com" />
+              <ContactLink icon={<Github size={18}/>} text="github.com/tiredshyt" />
+              <ContactLink icon={<Globe size={18}/>} text="Cebu, Philippines" />
             </div>
 
             <button className="btn-brand mt-4">Download Resume</button>
@@ -70,17 +87,7 @@ const Profile = () => {
                 ))}
               </div>
             </div>
-            
-            <div>
-              <h3 className="bg-[--skill-highlight] border-l-4 border-[--skill-accent] px-4 py-2 font-black text-[10px] uppercase tracking-widest mb-6">Certifications</h3>
-              <div className="space-y-3">
-                <CertItem title="Skills to Succeed Academy" org="Accenture" />
-                <CertItem title="Google Data Analytics" org="Google" />
-                <CertItem title="Google Coursera Python Automation" org="Google" />
-                <CertItem title="Google UI/UX Training Module" org="Google" />
-                <CertItem title="Rapid Application Development" org="Alliance Software Solutions" />
-              </div>
-            </div>
+       
           </div>
         </section>
 
@@ -95,12 +102,7 @@ const Profile = () => {
                 sub="University of San Jose - Recoletos"
                 desc="Major in Software Development. Focused on Software and Web development."
               />
-              <TimelineItem 
-                date="2021 - 2023"
-                title="Senior High School"
-                sub="Mantalongon National High School"
-                desc="Completed secondary education in Mantalongon, Dalaguete, Cebu."
-              />
+           
             </div>
           </div>
 
@@ -108,23 +110,19 @@ const Profile = () => {
             <h2 className="section-title text-slate-800">Experience <span className="title-accent"></span></h2>
             <div className="space-y-0">
               <TimelineItem 
-                date="Aug 2025 - Nov 2025"
-                title="Library Management System (School Project)"
-                sub="University Project"
-                desc="Developed a responsive, user-friendly online library system that improved accessibility for students. 70% of users reported easier access to resources."
+                date="Summer of 2022"
+                title="ML Music Editor"
+                sub="Side Project out of boredom"
+                desc="Developed an integrated web application that streamlines audio replacement, reducing task completion time from 5 minutes to 1 minute."
               />
               <TimelineItem 
                 date="Sep 2025 - Nov 2025"
-                title="Mini E-commerce Frontend (School Project)"
-                sub="University Project"
-                desc="Designed a simple online shopping interface with responsive design, product browsing, cart addition, and checkout functionality."
+                title="CodeRED Placer: A Hackathon Against OSAEC"
+                sub="Bidlisiw Foundation Hackathon"
+                desc="Developed a centralized database architecture to synchronize real-time reports across multiple Local Government Units (LGUs) to combat OSAEC.
+"
               />
-              <TimelineItem 
-                date="Jul 2025 - Sep 2025"
-                title="Kombat Console Games (School Project)"
-                sub="University Project"
-                desc="Developed a console-based combat game with character selection, turn-based battles, and health tracking, showcasing programming fundamentals."
-              />
+             
             </div>
           </div>
         </section>
@@ -132,7 +130,7 @@ const Profile = () => {
 
       <footer className="py-20 text-center border-t border-slate-50">
         <div className="text-[10px] font-black uppercase tracking-[0.5em] text-slate-300">
-          © 2026 Seth Andrey Jabagat • Built with React
+          © 2026 Bryle Solon • Built with React
         </div>
       </footer>
     </div>
