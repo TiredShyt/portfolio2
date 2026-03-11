@@ -66,7 +66,13 @@ const Profile = () => {
               <ContactLink icon={<Globe size={18}/>} text="Cebu, Philippines" />
             </div>
 
-            <button className="btn-brand mt-4">Download Resume</button>
+              <a 
+                href="/braylii.pdf" 
+                download="braylii.pdf" 
+                className="btn-brand mt-4 inline-block text-center"
+              >
+                Download Resume
+              </a>
           </div>
         </section>
 
